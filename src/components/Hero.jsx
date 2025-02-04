@@ -15,7 +15,7 @@ function Hero() {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-outline ">Get Started ⚡</button>
+            <button className="btn btn-outline "><Link to="/iqtiboslar">Get Started ⚡</Link></button>
           </div>
         </div>
       </div>
