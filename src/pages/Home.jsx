@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { Statistic } from "../components/Statistic";
+import Hero from "../components/Hero";
 
 
 function Home() {
   return (
     <div>
+      <Hero/>
       <Statistic/>
-      <section class="px-4 py-24 mx-auto max-w-7xl">
+      <section class="px-4 py-24 mx-auto max-w-7xl font-montserrat">
         <h2 class="mb-2 text-3xl font-extrabold leading-tight ">
           Kitoblardan Iqtiboslar
         </h2>

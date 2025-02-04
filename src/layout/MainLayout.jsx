@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 function MainLayout() {
   return (
-    <div className="font-mono">
+    <div className=" font-montserrat">
       <header>
         <Navbar/>
       </header>
-      <main className="max-w-6xl mx-auto">
+      <main className="max-w-7xl mx-auto">
         <Outlet/>
       </main>
       <footer>

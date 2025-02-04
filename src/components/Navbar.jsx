@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 max-w-6xl mx-auto font-bold">
+    <div className="navbar py-3 bg-base-100 max-w-7xl mx-auto font-bold">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ function Navbar() {
         <Link to="/" className="btn btn-ghost text-xl font-bold">Iqtibos24</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-base">
           <li>
             <Link to="/iqtiboslar">Iqtiboslar</Link>
           </li>
@@ -51,9 +51,10 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login" className="btn btn-neutral">Kirish</Link>
+        <Link to="/login" className="btn btn-outline">Kirish</Link>
       </div>
     </div>
+    
   );
 }
 
