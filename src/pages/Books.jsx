@@ -4,7 +4,7 @@ const books = [
   {
     id: 1,
     image:
-      "https://m.media-amazon.com/images/I/81F90H7hnML._SL1500_.jpg",
+      "https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/0012534847d973e1c9d270721e0f81d8202309151642268162292tjf4gum1.jpg.webp",
     title: "Atomic Habits",
     author: "James Clear",
     description:
@@ -12,7 +12,7 @@ const books = [
   },
   {
     id: 2,
-    image: "https://m.media-amazon.com/images/I/81qgEPE6k1L._SL1500_.jpg",
+    image: "https://assets.asaxiy.uz/product/items/desktop/a3f390d88e4c41f2747bfa2f1b5f87db2022121016444512251pZ2DqAwcMf.jpg",
     title: "The 7 Habits of Highly Effective People",
     author: "Stephen R. Covey",
     description:
@@ -60,7 +60,7 @@ const books = [
   },
   {
     id: 8,
-    image: "https://source.unsplash.com/400x600/?growth,book",
+    image: "https://m.media-amazon.com/images/I/61FXPFVKD6L._SL1500_.jpg",
     title: "Mindset: The New Psychology of Success",
     author: "Carol S. Dweck",
     description:
@@ -68,7 +68,7 @@ const books = [
   },
   {
     id: 9,
-    image: "https://source.unsplash.com/400x600/?leader,book",
+    image: "https://m.media-amazon.com/images/I/71Jg6kSgYwL._SL1500_.jpg",
     title: "The 5 AM Club",
     author: "Robin Sharma",
     description:
@@ -76,7 +76,7 @@ const books = [
   },
   {
     id: 10,
-    image: "https://source.unsplash.com/400x600/?career,book",
+    image: "https://frankfurt.apollo.olxcdn.com/v1/files/ytruq1zx2bjx1-UZ/image;s=1280x989",
     title: "Deep Work",
     author: "Cal Newport",
     description:
