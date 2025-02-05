@@ -3,7 +3,8 @@ import { useState } from "react";
 const books = [
   {
     id: 1,
-    image: "https://source.unsplash.com/400x600/?success,book",
+    image:
+      "https://m.media-amazon.com/images/I/81F90H7hnML._SL1500_.jpg",
     title: "Atomic Habits",
     author: "James Clear",
     description:
@@ -11,7 +12,7 @@ const books = [
   },
   {
     id: 2,
-    image: "https://source.unsplash.com/400x600/?mindset,book",
+    image: "https://m.media-amazon.com/images/I/81qgEPE6k1L._SL1500_.jpg",
     title: "The 7 Habits of Highly Effective People",
     author: "Stephen R. Covey",
     description:
@@ -19,15 +20,15 @@ const books = [
   },
   {
     id: 3,
-    image: "https://source.unsplash.com/400x600/?psychology,book",
+    image: "https://m.media-amazon.com/images/I/71I6MaZsCcL._SL1500_.jpg",
     title: "The Power of Now",
     author: "Eckhart Tolle",
-    description:
+    description:  
       "Ongli hayot kechirish va hozirgi onning kuchidan qanday foydalanish haqida.",
   },
   {
     id: 4,
-    image: "https://source.unsplash.com/400x600/?rich,book",
+    image: "https://m.media-amazon.com/images/I/81BE7eeKzAL._SL1500_.jpg",
     title: "Rich Dad Poor Dad",
     author: "Robert Kiyosaki",
     description:
@@ -35,7 +36,7 @@ const books = [
   },
   {
     id: 5,
-    image: "https://source.unsplash.com/400x600/?motivation,book",
+    image: "https://m.media-amazon.com/images/I/81gByv+FhjL._SL1500_.jpg",
     title: "Can't Hurt Me",
     author: "David Goggins",
     description:
@@ -43,7 +44,7 @@ const books = [
   },
   {
     id: 6,
-    image: "https://source.unsplash.com/400x600/?business,book",
+    image: "https://m.media-amazon.com/images/I/71M1P287BjL._SL1500_.jpg",
     title: "Start with Why",
     author: "Simon Sinek",
     description:
@@ -51,7 +52,7 @@ const books = [
   },
   {
     id: 7,
-    image: "https://source.unsplash.com/400x600/?money,book",
+    image: "https://m.media-amazon.com/images/I/81IM+frfVSL._SL1500_.jpg",
     title: "The Millionaire Fastlane",
     author: "MJ DeMarco",
     description:
@@ -130,10 +131,7 @@ function Books() {
 
       {visibleCount < books.length && (
         <div className="mt-10 text-center">
-          <button
-            onClick={showMoreBooks}
-            className="btn btn-outline"
-          >
+          <button onClick={showMoreBooks} className="btn btn-outline">
             Yana Ko'rish
           </button>
         </div>
