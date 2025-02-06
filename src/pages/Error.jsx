@@ -1,35 +1,48 @@
-
+import { Link, useRouteError } from "react-router-dom";
 
 function Error() {
+  const error = useRouteError();
+
+  if (error.status === 404) {
+    return (
+      <>
+        <section class="px-4 py-36 mx-auto max-w-7xl">
+          <main className="grid min-h-[51.8vh] place-items-center px-8">
+            <div className="text-center">
+              <p className="text-9xl font-semibold text-primary">404</p>
+              <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+                Page not found
+              </h1>
+              <p className="mt-6 text-lg leading-7">
+                Sorry, we couldn’t find the page you’re looking for.
+              </p>
+              <div className="mt-10">
+                <Link to="/">
+                  <button className="btn btn-outline">Go back home</button>
+                </Link>
+              </div>
+            </div>
+          </main>
+        </section>
+      </>
+    );
+  }
+
   return (
-    <section className="px-4 py-24 mx-auto max-w-7xl">
-      <div className="grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32">
-        <div>
-          <p className="mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase">
-            Error 404
-          </p>
-          <h1 className="mb-4 text-2xl font-extrabold leading-tight tracking-tight text-left md:text-4xl">
-            Oops! The page you're looking for isn't here.
-          </h1>
-          <p className="mb-5 text-base text-left md:text-xl">
-            You might have the wrong address, or the page may have moved.
-          </p>
-          <div className="flex gap-4">
-            <Link to="/" className="btn btn-md btn-light">
-              Back to homepage
+    <>
+      <section class="px-4 py-36 mx-auto max-w-7xl">
+        <main className="grid min-h-[51.8vh] place-items-center px-8">
+          <h4 className="text-center font-bold text-4xl">
+            There was an error...
+          </h4>
+          <div className="mt-10">
+            <Link to="/">
+              <button className="btn btn-outline">Go back home</button>
             </Link>
-            <a
-              href="https://www.khojiakbar.uz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-md btn-white"
-            >
-              Contact us
-            </a>
           </div>
-        </div>
-      </div>
-    </section>
+        </main>
+      </section>
+    </>
   );
 }
 
