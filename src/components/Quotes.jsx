@@ -50,18 +50,18 @@ function Quotes() {
             key={quote.id}
             className="border border-gray-300 rounded-xl p-4 shadow-lg transition-all hover:shadow-2xl"
           >
-            <a href={quote.link}>
+            <Link to={`/iqtiboslar/${quote.id}`}>
               <img
                 src={quote.image}
                 className="object-cover w-full h-56 mb-5 bg-center rounded-xl"
                 alt={quote.image ? quote.title : "Default image"}
                 loading="lazy"
               />
-            </a>
+            </Link>
             <h2 className="mb-2 text-lg font-semibold">
-              <a href={quote.link} className="hover:text-purple-700">
+              <Link to={`/iqtiboslar/${quote.id}`} className="hover:text-purple-700">
                 {quote.title}
-              </a>
+              </Link>
             </h2>
             <p className="mb-3 text-sm font-normal text-gray-500">
               {quote.description}

@@ -106,7 +106,7 @@ function Books() {
             key={book.id}
             className="border border-gray-300 rounded-xl p-4 shadow-lg transition-all hover:shadow-2xl"
           >
-            <a href={`#${book.id}`}>
+            <a href={`/books/${book.id}`}>
               <img
                 src={book.image}
                 className="object-cover w-full h-56 mb-5 bg-center rounded-xl"
@@ -115,7 +115,7 @@ function Books() {
               />
             </a>
             <h2 className="mb-2 text-lg font-semibold">
-              <a href={`#${book.id}`} className="hover:text-purple-700">
+              <a href={`/books/${book.id}`} className="hover:text-purple-700">
                 {book.title}
               </a>
             </h2>
