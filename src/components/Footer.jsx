@@ -35,7 +35,7 @@ function Footer() {
     <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
       <nav className="grid grid-flow-col gap-4">
         {navLinks.map(({ to, label }) => (
-          <Link key={to} to={to} className="hover:underline">
+          <Link key={to} to={to} className="hover:underline font-semibold text-base">
             {label}
           </Link>
         ))}
@@ -50,7 +50,7 @@ function Footer() {
         ))}
       </nav>
       <aside>
-        <p>
+        <p className="font-bold text-base">
           © {new Date().getFullYear()}{" "}
           <a href="http://khojiakbar.uz" target="_blank" rel="noopener noreferrer" className="hover:underline">
             Khojiakbar.uz
