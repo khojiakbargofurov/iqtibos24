@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function MainLayout() {
   return (
-    <div className=" font-montserrat">
+    <div className=" font-sora">
       <header>
         <Navbar/>
       </header>
