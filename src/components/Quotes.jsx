@@ -69,7 +69,7 @@ function Quotes() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {loading
           ? // 🟡 Agar loading bo‘lsa Skeleton Cardlarni chiqarish
-            Array(1)
+            Array(3)
               .fill(0)
               .map((_, index) => (
                 <div
@@ -108,7 +108,7 @@ function Quotes() {
                   {quote.description}
                 </p>
                 <p className="mb-3 text-sm font-normal text-gray-500">
-                  <span className="font-medium text-gray-900">
+                  <span className="font-medium">
                     {quote.author}
                   </span>{" "}
                   • {quote.date}
