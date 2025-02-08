@@ -104,7 +104,7 @@ function Quotes() {
                     {quote.title}
                   </Link>
                 </h2>
-                <p className="mb-3 text-sm font-normal text-gray-500">
+                <p className="mb-3 text-sm font-normal text-gray-500 line-clamp-3">
                   {quote.description}
                 </p>
                 <p className="mb-3 text-sm font-normal text-gray-500">
