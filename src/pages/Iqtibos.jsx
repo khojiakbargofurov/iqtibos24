@@ -129,7 +129,7 @@ function Iqtibos() {
     <section className="px-4 py-24 mx-auto max-w-3xl font-montserrat">
       <Toaster position="top-right" reverseOrder={false} />
       <div className="border border-gray-300 rounded-xl p-6 shadow-lg">
-      {quote.Image && quote.Image.length > 0 ? (
+         {quote.Image && quote.Image.length > 0 ? (
           <img
             src={quote.Image[0].url}
             alt={quote.Title}
