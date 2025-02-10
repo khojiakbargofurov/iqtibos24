@@ -7,10 +7,10 @@ function Hero() {
       <div className="hero bg-base-200 min-h-[650px]">
         <div className="hero-content text-center">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold">
+            <h1 className="sm:text-4xl text-2xl font-bold">
               Har Kunlik <span className="text-green-600">Iqtiboslar</span>{" "}
               <br />
-              <span className="text-3xl">
+              <span className="sm:text-3xl text-2xl">
                 Hayotingizga ilhom beradigan iqtiboslarni toping va biz bilan rivojlaning!
               </span>
             </h1>
