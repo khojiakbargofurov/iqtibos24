@@ -11,16 +11,17 @@ function Hero() {
               Har Kunlik <span className="text-green-600">Iqtiboslar</span>{" "}
               <br />
               <span className="sm:text-3xl text-2xl">
-                Hayotingizga ilhom beradigan iqtiboslarni toping va biz bilan rivojlaning!
+                Hayotingizga ilhom beradigan iqtiboslarni toping va biz bilan
+                rivojlaning!
               </span>
             </h1>
             <p className="py-6">
               O'zingizning sevimli iqtiboslaringizni yozing va boshqalar bilan
               bo‘lishing.
             </p>
-            <button className="btn btn-outline">
-              <Link to="/create">Iqtibos yozish ⚡</Link>
-            </button>
+            <Link to="/create">
+              <button className="btn btn-outline">Iqtibos yozish ⚡</button>
+            </Link>
           </div>
         </div>
       </div>

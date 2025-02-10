@@ -49,7 +49,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login" className="btn btn-outline flex items-center">
+        <Link to="/login" className="btn btn-outline btn-disabled flex items-center">
           Kirish
           <svg
             width="15"
