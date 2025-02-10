@@ -133,11 +133,11 @@ function Iqtibos() {
           <img
             src={quote.Image[0].url}
             alt={quote.Title}
-            className="object-cover w-full h-72 mb-6 rounded-xl"
+            className="object-cover w-full h-72 rounded-xl mb-5"
           />
         ) : (
-          <div className="w-full h-72 bg-gray-300 rounded-xl flex items-center justify-center">
-            <span className="text-gray-600">Rasm mavjud emas</span>
+          <div className="w-full h-72 bg-base-200 rounded-xl flex items-center text-center justify-center mb-5">
+            <span className="sm:text-3xl text-xl font-bold ">{quote.Title}</span>
           </div>
         )}
 
@@ -198,7 +198,7 @@ function Iqtibos() {
           </div>
         ) : (
           <>
-            <h1 className="text-3xl font-extrabold mb-4">{quote.Title}</h1>
+            <h1 className="sm:text-2xl text-xl font-extrabold mb-4">{quote.Title}</h1>
             <h2 className="text-xl font-medium text-gray-700 mb-4">
               {quote.Author}
             </h2>

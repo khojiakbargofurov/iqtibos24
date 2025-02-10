@@ -37,7 +37,7 @@ function Quotes() {
           image:
             record.fields.Image && record.fields.Image.length > 0
               ? record.fields.Image[0].url
-              : "https://via.placeholder.com/300",
+              : null,
         }));
 
         setQuotes(formattedQuotes);
@@ -69,19 +69,17 @@ function Quotes() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {loading
           ? // 🟡 Agar loading bo‘lsa Skeleton Cardlarni chiqarish
-            Array(3)
-              .fill(0)
-              .map((_, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-300 rounded-xl p-4 shadow-lg animate-pulse"
-                >
-                  <div className="w-full h-56 bg-gray-300 rounded-xl"></div>
-                  <div className="h-14 bg-gray-300 mt-4 rounded"></div>
-                  <div className="h-11 bg-gray-300 mt-2 rounded w-2/3"></div>
-                  <div className="h-8 bg-gray-300 mt-2 rounded w-1/2"></div>
-                </div>
-              ))
+            Array.from({ length: 3 }).map((_, index) => (
+              <div
+                key={index}
+                className="border border-gray-300 rounded-xl p-4 shadow-lg animate-pulse"
+              >
+                <div className="w-full h-56 bg-gray-300 rounded-xl"></div>
+                <div className="h-14 bg-gray-300 mt-4 rounded"></div>
+                <div className="h-11 bg-gray-300 mt-2 rounded w-2/3"></div>
+                <div className="h-8 bg-gray-300 mt-2 rounded w-1/2"></div>
+              </div>
+            ))
           : // ✅ Agar loading tugagan bo‘lsa, haqiqiy ma’lumotlarni chiqarish
             quotes.map((quote) => (
               <div
@@ -89,12 +87,19 @@ function Quotes() {
                 className="border border-gray-300 rounded-xl p-4 shadow-lg transition-all hover:shadow-2xl"
               >
                 <Link to={`/iqtiboslar/${quote.id}`}>
-                  <img
-                    src={quote.image}
-                    className="object-cover w-full h-56 mb-5 bg-center rounded-xl"
-                    alt={quote.title}
-                    loading="lazy"
-                  />
+                  {quote.image ? (
+                    <img
+                      src={quote.image}
+                      alt={quote.title || "Iqtibos"}
+                      className="object-cover w-full h-72 mb-6 rounded-xl"
+                    />
+                  ) : (
+                    <div className="w-full h-72 bg-base-200 rounded-xl flex items-center text-center justify-center mb-6">
+                      <span className="sm:text-2xl text-xl font-bold">
+                        {quote.title}
+                      </span>
+                    </div>
+                  )}
                 </Link>
                 <h2 className="mb-2 text-lg font-semibold">
                   <Link
@@ -108,20 +113,15 @@ function Quotes() {
                   {quote.description}
                 </p>
                 <p className="mb-3 text-sm font-normal text-gray-500">
-                  <span className="font-medium">
-                    {quote.author}
-                  </span>{" "}
-                  • {quote.date}
+                  <span className="font-medium">{quote.author}</span> •{" "}
+                  {quote.date}
                 </p>
               </div>
             ))}
       </div>
 
       <div className="mt-10 text-center">
-        <Link
-          to="/iqtiboslar"
-          className="btn btn-outline"
-        >
+        <Link to="/iqtiboslar" className="btn btn-outline">
           Barcha Iqtiboslar
         </Link>
       </div>
