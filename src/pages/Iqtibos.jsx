@@ -199,7 +199,7 @@ function Iqtibos() {
         ) : (
           <>
             <h1 className="sm:text-2xl text-xl font-extrabold mb-4">{quote.Title}</h1>
-            <h2 className="text-xl font-medium text-gray-700 mb-4">
+            <h2 className="text-xl font-medium mb-4">
               {quote.Author}
             </h2>
             <p className="text-gray-600">{quote.Description}</p>
